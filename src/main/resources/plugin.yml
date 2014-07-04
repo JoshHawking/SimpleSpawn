@@ -1,0 +1,9 @@
+name: SimpleSpawn
+main: com.aussie_jhawking.ss.Core
+version: 1.0
+author: [Aussie_Jhawking]
+commands:
+    spawn:
+      description: Sends the player to the world spawn
+    setspawn:
+      description: Sets the world spawn
