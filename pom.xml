@@ -40,15 +40,10 @@
         </plugins>
     </build>
     <dependencies>
-       <dependency>
-			<groupId>org.spigotmc</groupId>
-			<artifactId>spigot-api</artifactId>
-			<version>1.7.8-R0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>org.spigotmc</groupId>
-			<artifactId>spigot</artifactId>
-			<version>1.7.8-R0.1-SNAPSHOT</version>
+   		<dependency>
+			<groupId>org.bukkit</groupId>
+			<artifactId>bukkit</artifactId>
+			<version>${bukkitVersion}</version>
 		</dependency>
     </dependencies>
     <repositories>
@@ -62,9 +57,14 @@
 			<id>md_5-releases</id>
 			<url>http://repo.md-5.net/content/repositories/releases/</url>
 		</repository>
+	        <repository>
+			<id>bukkit-repo</id>
+			<url>http://repo.bukkit.org/content/groups/public/</url>
+		</repository>
 		<snapshotRepository>
 			<id>md_5-snapshots</id>
 			<url>http://repo.md-5.net/content/repositories/snapshots/</url>
 		</snapshotRepository>
+		
 	</distributionManagement>
 </project>
