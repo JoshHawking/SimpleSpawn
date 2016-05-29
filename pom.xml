@@ -39,32 +39,27 @@
             </plugin>
         </plugins>
     </build>
-    <dependencies>
-   		<dependency>
-			<groupId>org.bukkit</groupId>
-			<artifactId>bukkit</artifactId>
-			<version>${bukkitVersion}</version>
-		</dependency>
+<dependencies>
+    <!--Spigot API-->
+    <dependency>
+           <groupId>org.spigotmc</groupId>
+           <artifactId>spigot-api</artifactId>
+           <version>1.9.4-R0.1-SNAPSHOT</version>
+           <scope>provided</scope>
+    </dependency>
+    <!--Bukkit API-->
+    <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>1.9.4-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+    </dependency>
     </dependencies>
-    <repositories>
-        <repository>
-            <id>md_5-repo</id>
-			<url>http://repo.md-5.net/content/groups/public/</url>
-        </repository>
-    </repositories>
 	<distributionManagement>
-		<repository>
-			<id>md_5-releases</id>
-			<url>http://repo.md-5.net/content/repositories/releases/</url>
-		</repository>
-	        <repository>
-			<id>bukkit-repo</id>
-			<url>http://repo.bukkit.org/content/groups/public/</url>
-		</repository>
-		<snapshotRepository>
-			<id>md_5-snapshots</id>
-			<url>http://repo.md-5.net/content/repositories/snapshots/</url>
-		</snapshotRepository>
+    <repository>
+        <id>spigot-repo</id>
+        <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+    </repository>
 		
 	</distributionManagement>
 </project>
